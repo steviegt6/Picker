@@ -1,11 +1,11 @@
 --- src/decompiled/Assembly-CSharp/UIAbilityScreen.cs
 +++ src/PickCrafter/Assembly-CSharp/UIAbilityScreen.cs
-@@ -148,7 +_,7 @@
+@@ -146,7 +_,7 @@
  			case "BiomeScreen":
  			case "SocialScreen":
  			case "PlayerEquipMenu":
 -			case "PlayerEquipMenu":
 +			//case "PlayerEquipMenu":
- 				num = 0;
- 				break;
+ 			case "ChestScreen":
+ 				return true;
  		}
