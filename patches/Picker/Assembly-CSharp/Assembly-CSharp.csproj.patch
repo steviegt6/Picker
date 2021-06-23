@@ -1,0 +1,8 @@
+--- src/PickCrafter/Assembly-CSharp/Assembly-CSharp.csproj
++++ src/Picker/Assembly-CSharp/Assembly-CSharp.csproj
+@@ -50,5 +_,4 @@
+     <Reference Include="UnityEngine.UnityWebRequestModule" />
+     <Reference Include="UnityEngine.UnityWebRequestWWWModule" />
+   </ItemGroup>
+-  <ItemGroup />
+ </Project>

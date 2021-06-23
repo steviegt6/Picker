@@ -1,0 +1,11 @@
+--- src/PickCrafter/Assembly-CSharp/SceneController.cs
++++ src/Picker/Assembly-CSharp/SceneController.cs
+@@ -34,7 +_,7 @@
+ 
+ 	private void Start() {
+ 		if (appVersionText != null)
+-			appVersionText.text = "v 5.9.15\nb " + PlatformController.GetAppBuildNumber();
++			appVersionText.text = $"Picker v{PickerStuff.PickerVersion}\nPickCrafter v{GameData.APPVERSION}-b " + PlatformController.GetAppBuildNumber();
+ 	}
+ 
+ 	private void OnDestroy() {

@@ -1,0 +1,13 @@
+--- src/PickCrafter/Assembly-CSharp/UIPickCount.cs
++++ src/Picker/Assembly-CSharp/UIPickCount.cs
+@@ -76,8 +_,8 @@
+ 					break;
+ 			}
+ 		}
+-
+-		ppsText.text = GameData.picksPStext;
++		
++		ppsText.text = GameData.UpdateClicksPerSecond();
+ 	}
+ 
+ 	public static string CreatePicksString(double picks) {

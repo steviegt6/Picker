@@ -1,0 +1,28 @@
+--- src/PickCrafter/Assembly-CSharp/GameData.cs
++++ src/Picker/Assembly-CSharp/GameData.cs
+@@ -213,6 +_,8 @@
+ 		private set;
+ 	}
+ 
++	public static readonly List<float> Clicks = new List<float>();
++
+ 	public static string picksPStext {
+ 		get;
+ 		private set;
+@@ -707,6 +_,8 @@
+ 		if (double.IsInfinity(currentPicks) || double.IsNaN(currentPicks))
+ 			currentPicks = 0.0;
+ 	}
++	
++	public static string UpdateClicksPerSecond() => $"{picksPStext} / {Clicks.Count(x => x > Time.timeSinceLevelLoad - 1f)} cps";
+ 
+ 	public static void InitStructData() {
+ 		InitGearData();
+@@ -1103,6 +_,7 @@
+ 	}
+ 
+ 	public static void touchPick(float blockDamagePercentIncrease = 0f, bool statAdderSource = false) {
++		Clicks.Add(Time.timeSinceLevelLoad);
+ 		if (touchLimitStopwatch.ElapsedMilliseconds < 50) {
+ 			if (touchLimitStopwatch.ElapsedMilliseconds < 0) {
+ 				touchLimitStopwatch.Reset();
