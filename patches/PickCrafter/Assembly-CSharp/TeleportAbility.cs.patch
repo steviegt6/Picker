@@ -1,0 +1,19 @@
+--- src/decompiled/Assembly-CSharp/TeleportAbility.cs
++++ src/PickCrafter/Assembly-CSharp/TeleportAbility.cs
+@@ -18,7 +_,7 @@
+ 	private bool InterruptedAbility;
+ 	private List<TeleportBiome> TeleportBiomes;
+ 
+-	public TeleportAbility(int baseCoolDownDuration, AbilityType abilityTypeToSet) {
++	public TeleportAbility(int baseCoolDownDuration, AbilityType abilityTypeToSet) : base(baseCoolDownDuration, abilityTypeToSet) {
+ 		List<TeleportBiome> list = new List<TeleportBiome>();
+ 		TeleportBiome item = new TeleportBiome {
+ 			BiomeEnum = Biomes.Wasteland,
+@@ -42,7 +_,6 @@
+ 
+ 		list.Add(item);
+ 		TeleportBiomes = list;
+-		base._002Ector(baseCoolDownDuration, abilityTypeToSet);
+ 		base.AbilityIcon = Resources.Load<Sprite>("Textures/Abilities/icons/" + base.CurrentAbility);
+ 		base.Duration = 5f;
+ 		base.BaseDuration = 1f;

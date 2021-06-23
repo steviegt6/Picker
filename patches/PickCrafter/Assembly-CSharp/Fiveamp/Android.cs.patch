@@ -1,0 +1,24 @@
+--- src/decompiled/Assembly-CSharp/Fiveamp/Android.cs
++++ src/PickCrafter/Assembly-CSharp/Fiveamp/Android.cs
+@@ -16,8 +_,8 @@
+ 
+ 		public static int GetVersionCode() {
+ 			AndroidJavaObject @static = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
+-			AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getPackageManager", Array.Empty<object>());
+-			string text = @static.Call<string>("getPackageName", Array.Empty<object>());
++			AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getPackageManager");
++			string text = @static.Call<string>("getPackageName");
+ 			return androidJavaObject.Call<AndroidJavaObject>("getPackageInfo", new object[2] {
+ 				text,
+ 				0
+@@ -26,8 +_,8 @@
+ 
+ 		public static string GetVersionName() {
+ 			AndroidJavaObject @static = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
+-			AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getPackageManager", Array.Empty<object>());
+-			string text = @static.Call<string>("getPackageName", Array.Empty<object>());
++			AndroidJavaObject androidJavaObject = @static.Call<AndroidJavaObject>("getPackageManager");
++			string text = @static.Call<string>("getPackageName");
+ 			return androidJavaObject.Call<AndroidJavaObject>("getPackageInfo", new object[2] {
+ 				text,
+ 				0

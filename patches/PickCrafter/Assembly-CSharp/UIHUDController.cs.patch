@@ -1,0 +1,10 @@
+--- src/decompiled/Assembly-CSharp/UIHUDController.cs
++++ src/PickCrafter/Assembly-CSharp/UIHUDController.cs
+@@ -268,7 +_,6 @@
+ 			case "StoreScreen":
+ 			case "BiomeScreen":
+ 			case "SocialScreen":
+-			case "PlayerEquipMenu":
+ 			case "Main":
+ 			case "PlayerEquipMenu":
+ 			case "ChestScreen":

@@ -1,0 +1,12 @@
+--- src/decompiled/Assembly-CSharp/GameBalance.cs
++++ src/PickCrafter/Assembly-CSharp/GameBalance.cs
+@@ -2013,8 +_,7 @@
+ 			{ VoidEffect.VoidState.Sigmoid, 500 },
+ 			{ VoidEffect.VoidState.Null, 800 },
+ 			{ VoidEffect.VoidState.Lux, 1350 }		};
+-
+-		base._002Ector();
++		
+ 	}
+ 
+ 	public bool IsValid() {
