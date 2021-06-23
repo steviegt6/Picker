@@ -1,0 +1,10 @@
+--- src/decompiled/Assembly-CSharp/UnityEngine/UI/FiveampScrollRect.cs
++++ src/PickCrafter/Assembly-CSharp/UnityEngine/UI/FiveampScrollRect.cs
+@@ -815,6 +_,6 @@
+ 			IsActive();
+ 		}
+ 
+-		Transform ICanvasElement.get_transform() => base.transform;
++		Transform ICanvasElement.transform => base.transform;
+ 	}
+ }
