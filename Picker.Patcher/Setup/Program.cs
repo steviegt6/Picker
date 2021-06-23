@@ -101,7 +101,7 @@ namespace Picker.Patcher.Setup
 			while (true) {
 				var dialog = new OpenFileDialog {
 					InitialDirectory = ".",
-					Title = "Select .exe file"
+					Title = "Select .exe or .dll file"
 				};
 
 				if (dialog.ShowDialog() != DialogResult.OK)

@@ -113,7 +113,7 @@ namespace Picker.Patcher.Setup
             this.buttonDecompile.Size = new System.Drawing.Size(129, 23);
             this.buttonDecompile.TabIndex = 1;
             this.buttonDecompile.Text = "Decompile";
-            this.toolTipButtons.SetToolTip(this.buttonDecompile, "Uses ILSpy to decompile Terraria\r\nAlso decompiles server classes not included in " +
+            this.toolTipButtons.SetToolTip(this.buttonDecompile, "Uses ILSpy to decompile Game\r\nAlso decompiles server classes not included in " +
         "the client binary\r\nOutputs to src/decompiled");
             this.buttonDecompile.UseVisualStyleBackColor = true;
             this.buttonDecompile.Click += new System.EventHandler(this.buttonTask_Click);
@@ -223,14 +223,14 @@ namespace Picker.Patcher.Setup
             // 
             this.menuItemTerraria.Name = "menuItemTerraria";
             this.menuItemTerraria.Size = new System.Drawing.Size(268, 22);
-            this.menuItemTerraria.Text = "Select Terraria";
+            this.menuItemTerraria.Text = "Select Game";
             this.menuItemTerraria.Click += new System.EventHandler(this.menuItemTerraria_Click);
             // 
             // menuItemTmlPath
             // 
             this.menuItemTmlPath.Name = "menuItemTmlPath";
             this.menuItemTmlPath.Size = new System.Drawing.Size(268, 22);
-            this.menuItemTmlPath.Text = "Select Custom Tea Output Directory (Disabled)";
+            this.menuItemTmlPath.Text = "Select Custom Game Output Directory (Disabled)";
             this.menuItemTmlPath.Enabled = false;
             //this.menuItemTmlPath.Click += new System.EventHandler(this.menuItemTmlPath_Click);
             // 

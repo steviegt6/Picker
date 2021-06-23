@@ -173,7 +173,7 @@ namespace Picker.Patcher.Setup
 			{
 				Invoke(new Action(() =>
 				{
-					foreach (var b in taskButtons.Keys.Where(x => !x.Name.Contains("HookGen") && !x.Name.Contains("Tea Output Directory"))) b.Enabled = true;
+					foreach (var b in taskButtons.Keys.Where(x => !x.Name.Contains("HookGen") && !x.Name.Contains("Game Output Directory"))) b.Enabled = true;
 					buttonCancel.Enabled = false;
 					progressBar.Value = 0;
 					if (closeOnCancel) Close();
